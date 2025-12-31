@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Creator</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Create a PDF file in Python</h1>
+    <p>Learn how to create a PDF file using Python.</p>
+
+    <pre>
+      <code class="language-python">
+from reportlab.pdfgen import canvas
+
+# Create a new PDF file
+
+pdf_file = canvas.Canvas("Example.pdf")
+
+# Add text to the PDF file
+
+pdf_file.drawString(72, 720, "Hello, Python!")
+pdf_file.drawString(72, 700, "Free PDF File")
+pdf_file.drawString(72, 680, "companionemlinguae.info")
+
+# Save the PDF file
+
+pdf_file.save()
+      </code>
+    </pre>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</body>
+</html>
